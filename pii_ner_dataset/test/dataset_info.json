@@ -1,0 +1,55 @@
+{
+  "citation": "",
+  "dataset_name": "Personal Information Dataset",
+  "description": "This dataset contains annotated sentences from the personal information.\nIt includes annotations for name, gender, number, account number.\n\nTags:\n- \"O\": \"Non-entity tokens\"\n- \"B-NAME\": \"Start of indian name - (e.g. Amit, Rajesh, Ankit, Brajraj, Rekha, Arshad, Niraj, Jyoti)\",\n- \"I-NAME\": \"Continuation of names - (e.g Solanki, Kalathia, Singh)\",\n- \"B-GENDER\": \"Value of gender - (e.g. Male, Female, Transgender)\",\n- \"B-DOB\": \"Start of Birthdate - (e.g. March 18 2003, 02/01/2004, 08-06-1998)\",\n- \"I-DOB\": \"Continuation of Birthdate\",\n- \"B-NATIONALITY\": \"Start of Nationality - (e.g. Indian, American, Chinese, Japanese)\",\n- \"I-NATIONALITY\": \"Continuation of Nationality\",\n- \"B-CITY\": \"Start of city name - (e.g. Jodhpur, Bangalore, Hyderabad, Mumbai, Pune)\",\n- \"I-CITY\": \"Continuation of city name\",\n- \"B-EMAIL\": \"Start of email address - (e.g., indianindian23@gmail.com, barjrajshivani776@gmail.com)\",\n- \"B-PHONE\": \"Start of phone number - (e.g. 874 892 4670, 91 7140728911, +9180679 73921, 75081 18639)\",\n- \"I-PHONE\": \"Continuation of phone number\",\n- \"B-AADHAR\": \"Start of aadhar card number - (e.g. 257574488836, 800476797877)\",\n- \"I-AADHAR\": \"Continuation of aadhar card number\",\n- \"B-PAN\": \"Start of pan number - (e.g., XJVMV8282Y, CKNJX9036X, WZIRX3768L)\",\n- \"B-VOTER\": \"Start of voter identitiy number - (e.g., KGI6158551, ILX3627901)\",\n- \"B-PASSPORT\": \"Start of passport number - (e.g., K4190715, S1721121, G48 38859)\",\n- \"I-PASSPORT\": \"Continuation of passport number\",\n- \"B-LICENSE\": \"Start of driving license number - (e.g., TN87 20075880927, JK01 20104637542, TR-7120118774157)\",\n- \"I-LICENSE\": \"Continuation of driving license number\",\n- \"B-ACCOUNTNUMBER\": \"Start of bank account number - (e.g., 11389823690, 71717839372, 78339305069)\",\n- \"I-ACCOUNTNUMBER\": \"Continuation of bank account number\",\n- \"B-BANKIFSC\": \"Start of bank ifsc code - (e.g., IDIB0755055, ICIC0313449, SBIN0547870)\",\n- \"B-CARDNUMBER\": \"Start of atm card number - (e.g., 40265307837299051, 50786592905011426, 40001623133171904)\",\n- \"B-CVV\": \"Start of cvv code of atm card - (e.g., 837, 318, 635)\",\n- \"B-IP\": \"Start of ip address - (e.g., 46.81.232.82, 222.15.54.4, 167.77.106.135)\",\n\nNote: This dataset is created using gemini 1.5 and is only for research and education purposes. For production, it is highly recommended to use human-annotated data.\n",
+  "features": {
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "ner_tags": {
+      "feature": {
+        "names": [
+          "O",
+          "B-NAME",
+          "I-NAME",
+          "B-GENDER",
+          "B-DOB",
+          "I-DOB",
+          "B-NATIONALITY",
+          "I-NATIONALITY",
+          "B-CITY",
+          "I-CITY",
+          "B-EMAIL",
+          "B-PHONE",
+          "I-PHONE",
+          "B-AADHAR",
+          "I-AADHAR",
+          "B-PAN",
+          "B-VOTER",
+          "B-PASSPORT",
+          "I-PASSPORT",
+          "B-LICENSE",
+          "I-LICENSE",
+          "B-ACCOUNTNUMBER",
+          "I-ACCOUNTNUMBER",
+          "B-BANKIFSC",
+          "B-CARDNUMBER",
+          "B-CVV",
+          "B-IP"
+        ],
+        "_type": "ClassLabel"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
